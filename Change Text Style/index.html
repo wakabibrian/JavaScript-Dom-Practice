@@ -7,13 +7,14 @@
     <title>Change Text Style</title>
   </head>
   <body>
-    <main>
+    <main class="main">
       <!-- TODO 1: Create dropdown menus for selecting font family, font size, and text color   -->
+      <!-- Start Dropdown Menus Container -->
       <div class="dropdown-menus">
-        <div class="font-family">
-          <label for="font-select">Font:</label>
-          <select id="font-select" class="font-select">
-            <option value="arial">Arial</option>
+        <div class="font">
+          <label for="font-family">Font:</label>
+          <select id="font-family" class="font-family">
+            <option value="lato">Lato</option>
             <option value="poppins">Poppins</option>
             <option value="roboto">Roboto</option>
             <option value="inter">Inter</option>
@@ -21,17 +22,17 @@
           </select>
         </div>
 
-        <div class="font-size">
+        <div class="size">
           <label for="font-size">Size:</label>
           <select id="font-size" class="font-size">
-            <option value="arial">Small</option>
-            <option value="poppins">Medium</option>
-            <option value="roboto">Large</option>
-            <option value="inter">Extra Large</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
           </select>
         </div>
 
-        <div class="text-color">
+        <div class="color">
           <label for="text-color">Color:</label>
           <select id="text-color" class="text-color">
             <option value="black">Black</option>
@@ -42,9 +43,12 @@
           </select>
         </div>
       </div>
+      <!-- End Dropdown Menus Container -->
 
-      <!-- TODO 2: Create editable text that updates dynamically based on the selected styles   -->
+      <!-- TODO 2: Create a text that updates dynamically based on the selected styles   -->
       <h1 class="main-text">Change my style using the menus above!</h1>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
