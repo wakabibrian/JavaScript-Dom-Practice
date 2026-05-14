@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Change Text Style</title>
+  </head>
+  <body>
+    <main>
+      <!-- TODO 1: Create dropdown menus for selecting font family, font size, and text color   -->
+      <div class="dropdown-menus">
+        <div class="font-family">
+          <label for="font-select">Font:</label>
+          <select id="font-select" class="font-select">
+            <option value="arial">Arial</option>
+            <option value="poppins">Poppins</option>
+            <option value="roboto">Roboto</option>
+            <option value="inter">Inter</option>
+            <option value="montserrat">Montserrat</option>
+          </select>
+        </div>
+
+        <div class="font-size">
+          <label for="font-size">Size:</label>
+          <select id="font-size" class="font-size">
+            <option value="arial">Small</option>
+            <option value="poppins">Medium</option>
+            <option value="roboto">Large</option>
+            <option value="inter">Extra Large</option>
+          </select>
+        </div>
+
+        <div class="text-color">
+          <label for="text-color">Color:</label>
+          <select id="text-color" class="text-color">
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="purple">Purple</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- TODO 2: Create editable text that updates dynamically based on the selected styles   -->
+      <h1 class="main-text">Change my style using the menus above!</h1>
+    </main>
+  </body>
+</html>
