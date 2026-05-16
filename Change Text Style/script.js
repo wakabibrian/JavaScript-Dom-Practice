@@ -3,6 +3,29 @@ let textFont = document.querySelector(".font-family");
 let textSize = document.querySelector(".font-size");
 let textColor = document.querySelector(".text-color");
 
+// TODO 2. Select text value and store it in a variable
+let textEl = document.querySelector(".main-text");
+
+// TODO 3. Select the value for the font-family and store it in a variable
+let fontStyleEl = document.getElementById("font-style");
+
+// TODO 4. Change the font-families value to change the text style
+fontStyleEl.addEventListener("change", function () {
+  let fontFamilyValue = fontStyleEl.value;
+
+  if (fontFamilyValue === "open-sans") {
+    text.style.fontFamily = "Open Sans";
+  } else if (fontFamilyValue === "roboto") {
+    text.style.fontFamily = "Roboto";
+  } else if (fontFamilyValue === "diplomata") {
+    text.style.fontFamily = "Diplomata";
+  } else if (fontFamilyValue === "lora") {
+    text.style.fontFamily = "Lora";
+  } else if (fontFamilyValue === "google-sans") {
+    text.style.fontFamily = "Google Sans";
+  }
+});
+
 // Change text color
 textColor.addEventListener("change", function () {
   let textColorValue = textColor.value;
